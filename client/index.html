@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>我的任务列表</h1>
+
+  <div class="input-area">
+    <input id="main-input" type="text" placeholder="请输入任务内容或搜索关键词">
+    <button id="add-btn">添加任务</button>
+    <button id="search-btn">搜索</button>
+  </div>
+
+  <div class="filter-area">
+    <button id="filter-all">全部</button>
+    <button id="filter-undone">未完成</button>
+    <button id="filter-done">已完成</button>
+  </div>
+
+  <ul id="todo-list"></ul>
+
+  <!-- 分页区域 -->
+  <div class="pagination-area">
+    <button id="prev-page">上一页</button>
+    <span id="page-info">第 1 页 / 共 1 页</span>
+    <button id="next-page">下一页</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
